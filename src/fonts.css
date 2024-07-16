@@ -1,0 +1,62 @@
+.light{
+   font-style: normal !important;
+   font-weight: 300 !important;
+   line-height: normal !important;
+}
+
+.bold{
+   font-style: normal !important;
+   font-weight: 700 !important;
+   line-height: normal !important;
+}
+
+.h1{
+   font-size: 48px !important;
+   font-style: normal !important;
+   font-weight: 400 !important;
+   line-height: normal !important;
+}
+
+.h2{
+   font-size: 32px !important;
+   font-style: normal !important;
+   font-weight: 400 !important;
+   line-height: normal !important;
+}
+
+.h3{
+   font-size: 20px !important;
+   font-style: normal !important;
+   font-weight: 400 !important;
+   line-height: normal !important;
+}
+
+.h4{
+   font-size: 15px !important;
+   font-style: normal !important;
+   font-weight: 400 !important;
+   line-height: normal !important;
+}
+
+.h5{
+   font-size: 10px !important;
+   font-style: normal !important;
+   font-weight: 400 !important;
+   line-height: normal !important;
+}
+
+.skillTitle{
+   color: #ccfff6 !important;
+   font-weight: lighter !important;
+}
+
+.titlePage{
+   writing-mode: vertical-lr !important;
+   text-orientation: upright !important;
+}
+
+ @media only screen and (max-width: 767px) {
+   .titlePage{
+      writing-mode:horizontal-tb !important;
+    }
+}

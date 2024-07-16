@@ -1,0 +1,22 @@
+@keyframes availableCheck {
+   30% {color: #148c80;}
+   100% {color: #6ecec4;}
+}
+
+@keyframes cardArrow {
+   from {color: #148c80;}
+   to {color: #6ecec4;}
+}
+
+@keyframes card {
+	0% {
+		animation-timing-function: ease-out;
+		transform: scale(1);
+		transform-origin: center center;
+	}
+
+	45% {
+		animation-timing-function: ease-out;
+		transform: scale(1.05);
+	}
+}

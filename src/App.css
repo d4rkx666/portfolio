@@ -1,0 +1,200 @@
+body{
+  background-color: black !important;
+  color: #0BCFAC !important;
+}
+
+.headerMenu{  
+  font-size: 20px !important;
+}
+
+.availableMenu{
+  text-align: center;
+}
+
+.availableCheck{
+  border-radius: 50px;
+  padding: 10px;
+  animation: availableCheck 2s infinite;
+  background-color: #22263d;
+}
+
+.verticalAlign{
+  margin-top: auto !important;
+  margin-bottom: auto !important;
+}
+
+
+.mainMenuElements{
+  text-decoration: none;
+  color: #0BCFAC;
+  margin-right: 15px;
+}
+
+.mainMenuElements:hover{
+  color: #07725e;
+}
+
+.socialMediaElements img:hover{
+  scale: 0.9;
+}
+
+
+
+/* MainHeaderBody */
+
+
+.middleMsg{
+  width: 60%;
+  margin-left: 20%;
+  margin-top: 100px;
+  margin-bottom: 100px;
+  text-align: center;
+  display: inline-flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+
+.headerMsg{
+  background: radial-gradient(492.8% 170.73% at 10.19% -20.9%, rgba(49, 188, 180, 0.62) 21.89%, rgba(255, 133, 133, 0.65) 44.18%, #2DAA5F 62.42%, #6B4FB9 92.07%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.littleHeaderMsg{
+  background: radial-gradient(818.6% 163.19% at -6.05% -18.24%, #A1124E 10%, rgba(49, 188, 180, 0.62) 55.5%, rgba(221, 72, 72, 0.79) 69.5%, #DE4747 69.51%, #F00 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.codeMsg{
+  background: radial-gradient(818.6% 163.19% at -6.05% -18.24%, #A1124E 10%, rgba(49, 188, 180, 0.62) 25.5%, rgba(221, 72, 72, 0.79) 59.5%, #DE4747 69.51%, #F00 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.border-left{
+  border-left: 1px solid #03342b;
+}
+
+
+
+
+/* portfolio */
+
+
+.cardArrow{
+  position: absolute;
+  bottom: 20px !important;
+  right: 15px;
+  width: 30px !important;
+}
+
+.cardArrow:hover{
+  scale: 0.9;
+}
+
+.cardParagraph{
+  position: absolute;
+  bottom: 25px;
+  left: 16px;
+  width: 70%;
+  overflow: hidden;
+  display: -webkit-box; 
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+
+.portfolioCard:hover{
+  animation: card 2s;
+  cursor: pointer;
+}
+
+/* skills */
+
+.skillAgileMetodologies{
+  float: left;
+  width: 100%;
+  height: 100px;
+}
+
+
+.skillsBody{
+  float: left;
+  width: 70%;
+}
+
+
+/* about me */
+
+.avatar{
+  float: left;
+  width: 30%;
+  text-align: center;
+  box-sizing: border-box;
+  border-right: 1px solid #747474;
+}
+
+.description{
+  color: white !important;
+}
+
+.bg-felix{
+  background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(12,33,66,1) 100%);
+  padding-top: 25px;
+}
+
+/*
+.emailSquare{
+  float: left;
+  width: 200px;
+  padding: 10px;
+  background-color: #0bcfab50;
+  box-shadow: 0 4px 8px 0 rgba(238, 173, 173, 0.164);
+  transition: 0.3s;
+  border-radius: 5px;
+}
+
+.emailSquare:hover {
+  box-shadow: 0 8px 16px 0 rgba(255, 254, 254, 0.2);
+  cursor:copy;
+}
+*/
+
+.emailSquare {
+  z-index: 1;
+  position: relative;
+  color: white;
+  padding: 10px;
+  border: none;
+  background-color: hsl(236, 32%, 26%);
+  text-align: center;
+  border-radius: 15px;
+}
+
+.emailSquare:hover {
+  cursor: pointer;
+}
+
+.emailSquare::before {
+  content: '';
+  z-index: -1;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  border: 4px solid hsl(236, 32%, 26%);
+  transform-origin: center;
+  transform: scale(1);
+  border-radius: 15px;
+}
+
+.emailSquare:hover::before {
+  transition: all 0.75s ease-in-out;
+  transform-origin: center;
+  transform: scale(1.75);
+  opacity: 0;
+}
