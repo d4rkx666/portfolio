@@ -13,6 +13,8 @@ import Accordion from 'react-bootstrap/Accordion';
 import gym_thumbnail from './../images/gym/portrait.png';
 import tc_thumbnail from './../images/torontocupcake/portrait.png';
 import wta_thumbnail from './../images/wta/portrait.png';
+import upimm_thumbnail from './../images/upimmigration/portrait.png';
+import hackathon_thumbnail from './../images/vtw-hackathon/portrait.png';
 
 export const Portfolio = () => {  
 
@@ -28,16 +30,42 @@ export const Portfolio = () => {
 
    const cards = [
       {
+         title: "Hackathon",
+         description: "I have attended the VTW Mini Hackathon in Vancouver, BC, where my team and I developed an product in order to enhance the tech community hub in Vancouver.",
+         projectSteps: "I played an important role as Full-stack developer (Back-end & Front-end), designing the Home Page with the lastest UI Kit technologies.\n\nAs a Back-end developer, I implemented Maps SDK to pin the Venue events in Vancouver and its information, and Cloud Firebase API to get the Venue information storaged in our database.\n\nHackathon event: \nhttps://devpost.com/software/vaneventvenue\nhttps://lu.ma/f73uoq87?tk=nBFpZV",
+         duration: "Sept 14th 2024, 11 hours",
+         role: "Full-Stack Developer",
+         source: "https://vtw-hackathon.vercel.app/",
+         skills: ["React", "Next.JS", "Material UI", "Cloud Firebase"],
+         designPrototypes: [
+         ],
+         thumbnail: hackathon_thumbnail
+      },
+      {
          title: "Welcome Travel Accommodation",
          description: "Welcome Travel Accommodation is a real state company which rentes rooms in sharing houses around Vancouver, BC.",
          projectSteps: "I am currently designing and developing the website of the company.\n\nI am designing and developing the customer and admin panel, which are the most important goals for the company, so I can boost the internal management up to 80% of productivity.\n\nNow the current project fase is on development the functionality of the panels and designing the full database, but after finishing the main goal, I will improve the main page design.",
-         duration: "May - Current",
+         duration: "May 2024 - Current",
          role: "Web Master | Developer & Designer",
          source: "https://welcometravelaccommodation.com/",
          skills: ["PHP language", "MySQL Databases", "Javascript", "HTML5 and CSS5"],
          designPrototypes: [
          ],
          thumbnail: wta_thumbnail
+      },
+      {
+         title: "Up Immigration",
+         description: "UpImmigration.ca is a Regulated Canadian Immigration Consultant.",
+         projectSteps: "This was my final project for my Diploma. My team and I redesigned the website for our real client: UpImmigration. \n\nMy role was Project Manager. I managed the project time and ensure all our meetings with our cliente were moderated on time. I also helped with the design of the Main Page and prototype in Figma.",
+         duration: "July 2024",
+         role: "Project Manager | Designer",
+         source: "https://upimmigration.ca/",
+         skills: ["Project Management", "Kanban", "Figma"],
+         designPrototypes: [
+            {title:"Prototype", sourceUrl: "https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FzRMC8lSD2Mb9OahZQFuFpQ%2FFINAL-PROJECT---M1-0224-Team-Hortons%3Fnode-id%3D2784-12260%26node-type%3DFRAME%26t%3DHqaVlQ2LodBSaLjA-1%26scaling%3Dscale-down%26content-scaling%3Dfixed%26page-id%3D2649%253A2498"},
+            {title:"Final presentation & keypoints", sourceUrl:"https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fslides%2FEiGgsjPdv1bd01xfTKvO5N%2FTeam-Horton's-Presentation%3Fnode-id%3D1-85%26t%3DARf7WZpM3B4Us5LI-1"}
+         ],
+         thumbnail: upimm_thumbnail
       },
       {
          title: "Toronto Cupcake Redesign",
@@ -84,7 +112,7 @@ export const Portfolio = () => {
                            <Card className='portfolioCard' onClick={() => handleCard(index)}>
                               <Card.Img style={{height:"180px"}} variant="top" src={item.thumbnail}/>
                               <Card.Body>
-                              <Card.Title>{item.title}</Card.Title>
+                              <Card.Title>{item.title} | {item.duration}</Card.Title>
                               <Card.Text className='text-truncate'>{item.description}</Card.Text>
                               </Card.Body>
                               <Card.Body>

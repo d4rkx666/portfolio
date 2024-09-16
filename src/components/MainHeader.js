@@ -22,14 +22,14 @@ export const MainHeader = () => {
           </Row>
           <Row>
             <Col>
-              <span>Senior Java & PHP Developer</span><br/>
+              <span>Full-stack Developer</span><br/>
               <span>UI & UX Designer</span>
             </Col>
           </Row>
         </Col>
 
         {/* Header center*/}
-        <Col sm="12" md="2" lg="2" className='verticalAlign'>
+        <Col xs={{ span: 6, offset: 3 }} md={{ span: 2, offset: 0}} className='verticalAlign text-center'>
           <div className='availableCheck h4 bold'>&bull; {available}</div>
         </Col>
 
@@ -45,7 +45,7 @@ export const MainHeader = () => {
         </Col>
         <Col md lg="2" className="verticalAlign text-center">
           <div className='socialMediaElements'>
-            <a href='https://linkedin.com/in/felix-catzin-74784a138' target='_blank'><img src={mdi_linkedin}></img></a>
+            <a href='https://linkedin.com/in/felix-catzin' target='_blank'><img src={mdi_linkedin}></img></a>
             <a href='https://github.com/d4rkx666' target='_blank'><img src={mdi_github}></img></a>
           </div>
         </Col>

@@ -10,7 +10,9 @@ const Resume = () => {
             <hr/>
             <Row>
                <Col>
-                  <embed src={ResumePDF+"#toolbar=0&navpanes=0"} width="100%" height="500px" type="application/pdf"/>
+                    <iframe frameborder="0" width="100%" height="500px" src={`https://docs.google.com/gview?url=${encodeURIComponent('http://'+window.location.hostname+ResumePDF)}&embedded=true`}></iframe>
+
+
                </Col>
             </Row>
         </Container>

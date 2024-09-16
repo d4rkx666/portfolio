@@ -1,39 +1,29 @@
 import React from 'react'
 
-import Row from 'react-bootstrap/Row';
-import Col from 'react-bootstrap/Col';
-import { Container } from 'react-bootstrap';
+import { Container, Button, Row, Col } from 'react-bootstrap';
 
 export const Footer = () => {
   return (
-    <Container fluid>
-      <Row className='bg-felix'>
-        <Col sm="3" md="3" lg="3" className='verticalAlign text-center'>
-          <p className="light h5">Designed with Figma and developed with ReactJS by yours truly.
-          © Felix Catzin 2024</p>
-        </Col>
-        <Col sm="8" md="8" lg="8">
-          <Row>
-            <Col className="text-center">
-              <Row>
-                  <Col sm="12" md="12" lg="12">
-                    <h1>Let's get in touch</h1>
-                  </Col>
-              </Row>
-              <Row>
-                <Col md="9" lg="9" className='text-center text-md-end'>
-                  <p>Please feel free to send me an email.<br/> We can meet and have a coffee while talking about business!</p>
-                </Col>
-                <Col md="3" lg="3">
-                  <a href="mailto:fcatzin@hotmail.com"><button className="emailSquare" onClick={() => {navigator.clipboard.writeText("fcatzin@hotmail.com")}}>
-                    fcatzin@hotmail.com
-                  </button></a>
-                </Col>
-              </Row>
-            </Col>
-          </Row>
-        </Col>
-      </Row>
-    </Container>
+    <footer className="footer">
+      <Container fluid>
+        <Row className="justify-content-center">
+          <Col md={8} className="text-center">
+            <h2 className="footer-heading">Let's get in touch</h2>
+            <hr className="footer-divider" /> {/* Divider */}
+            <p>Please feel free to send me an email. We can meet and have a coffee while talking about business!</p>
+            <Button 
+              variant="outline-light" 
+              className="footer-email-btn" 
+              href="mailto:fcatzin@hotmail.com"
+            >
+              fcatzin@hotmail.com
+            </Button>
+            <p className="mt-4 footer-credit">
+              Designed with Figma and developed with ReactJS by yours truly. © Felix Catzin 2024
+            </p>
+          </Col>
+        </Row>
+      </Container>
+    </footer>
   )
 }
