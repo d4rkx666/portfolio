@@ -15,6 +15,7 @@ import tc_thumbnail from './../images/torontocupcake/portrait.png';
 import wta_thumbnail from './../images/wta/portrait.png';
 import upimm_thumbnail from './../images/upimmigration/portrait.png';
 import hackathon_thumbnail from './../images/vtw-hackathon/portrait.png';
+import jobbooster_thumbnail from './../images/jobbooster/portrait.png';
 
 export const Portfolio = () => {  
 
@@ -30,6 +31,30 @@ export const Portfolio = () => {
 
    const cards = [
       {
+         title: "Job Booster",
+         description: "Job Booster is a personal project that optimize/create resumes with Artificial Intelligence to stand out for recruiters and employers, and replicates the Applicant Tracking System to show a similar score to pass these systems of automate screening.",
+         projectSteps: "Since I am the owner of this project, I developer everything by my own.\n\nAs a Front-End developer, I used React JS and Tailwind to style the components. I used the basic and advanced hooks to create an interactive web application, from useState, useEffect, and also useContext to wrap all the code where authentication is needed to show the components.\n\nAs Back-End developer, I developed an Restful API in Python with FastApi, to deliver an easier way to interact with the database and enhance the permission of Free/Pro users.\n\nI also created the database with NoSql using Firebase with Firestore to store user data, and FireAuth to authenticate my users.",
+         duration: "Feb 2025 - In course",
+         role: "Full-Stack Developer",
+         source: "https://jobbooster.vercel.app/",
+         skills: ["React.JS", "Python", "FastApi", "Tailwind", "Cloud Firebase", "Artificial Intelligence"],
+         designPrototypes: [
+         ],
+         thumbnail: jobbooster_thumbnail
+      },
+      {
+         title: "Welcome Travel Accommodation",
+         description: "Welcome Travel Accommodation is a real state company which rentes rooms in sharing houses around Vancouver, BC.",
+         projectSteps: "I am currently designing and developing the website of the company.\n\nI am designing and developing the customer and admin panel, which are the most important goals for the company, so I can boost the internal management up to 80% of productivity.\n\nNow the current project fase is on development the functionality of the panels and designing the full database, but after finishing the main goal, I will improve the main page design.",
+         duration: "May 2024 - In Course",
+         role: "Web Master | Developer & Designer",
+         source: "https://welcometravelaccommodation.com/",
+         skills: ["PHP language", "MySQL Databases", "Javascript", "HTML5 and CSS5"],
+         designPrototypes: [
+         ],
+         thumbnail: wta_thumbnail
+      },
+      {
          title: "Hackathon",
          description: "I have attended the VTW Mini Hackathon in Vancouver, BC, where my team and I developed an product in order to enhance the tech community hub in Vancouver.",
          projectSteps: "I played an important role as Full-stack developer (Back-end & Front-end), designing the Home Page with the lastest UI Kit technologies.\n\nAs a Back-end developer, I implemented Maps SDK to pin the Venue events in Vancouver and its information, and Cloud Firebase API to get the Venue information storaged in our database.\n\nHackathon event: \nhttps://devpost.com/software/vaneventvenue\nhttps://lu.ma/f73uoq87?tk=nBFpZV",
@@ -40,18 +65,6 @@ export const Portfolio = () => {
          designPrototypes: [
          ],
          thumbnail: hackathon_thumbnail
-      },
-      {
-         title: "Welcome Travel Accommodation",
-         description: "Welcome Travel Accommodation is a real state company which rentes rooms in sharing houses around Vancouver, BC.",
-         projectSteps: "I am currently designing and developing the website of the company.\n\nI am designing and developing the customer and admin panel, which are the most important goals for the company, so I can boost the internal management up to 80% of productivity.\n\nNow the current project fase is on development the functionality of the panels and designing the full database, but after finishing the main goal, I will improve the main page design.",
-         duration: "May 2024 - Current",
-         role: "Web Master | Developer & Designer",
-         source: "https://welcometravelaccommodation.com/",
-         skills: ["PHP language", "MySQL Databases", "Javascript", "HTML5 and CSS5"],
-         designPrototypes: [
-         ],
-         thumbnail: wta_thumbnail
       },
       {
          title: "Up Immigration",
