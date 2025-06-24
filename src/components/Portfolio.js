@@ -33,11 +33,11 @@ export const Portfolio = () => {
       {
          title: "Job Booster",
          description: "Job Booster is a personal project that optimize/create resumes with Artificial Intelligence to stand out for recruiters and employers, and replicates the Applicant Tracking System to show a similar score to pass these systems of automate screening.",
-         projectSteps: "Since I am the owner of this project, I developer everything by my own.\n\nAs a Front-End developer, I used React JS and Tailwind to style the components. I used the basic and advanced hooks to create an interactive web application, from useState, useEffect, and also useContext to wrap all the code where authentication is needed to show the components.\n\nAs Back-End developer, I developed an Restful API in Python with FastApi, to deliver an easier way to interact with the database and enhance the permission of Free/Pro users.\n\nI also created the database with NoSql using Firebase with Firestore to store user data, and FireAuth to authenticate my users.",
+         projectSteps: "Since I am the owner of this project, I developed everything from scratch.\n\nAs a Front-End developer, I used React JS and Tailwind to style the components. I used the basic and advanced hooks to create an interactive web application, from useState, useEffect, and also useContext to wrap all the code where authentication is needed to show the components.\n\nAs Back-End developer, I developed an Restful API in Python with FastApi, to develop and implement Artificial Intelligence services and manage the creation / advice of resumes. This API also helps to easily interact with the real-time database and enhance the permission of Free/Pro users.\n\nLately I migrated the project to Next.js 15, implementing the new routing and enhancing the SEO.",
          duration: "Feb 2025 - In course",
          role: "Full-Stack Developer",
          source: "https://jobbooster.vercel.app/",
-         skills: ["React.JS", "Python", "FastApi", "Tailwind", "Cloud Firebase", "Artificial Intelligence"],
+         skills: ["React.JS", "Next.js", "Python", "FastApi", "Tailwind", "Cloud Firebase", "Artificial Intelligence", "OpenAI"],
          designPrototypes: [
          ],
          thumbnail: jobbooster_thumbnail
