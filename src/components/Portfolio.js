@@ -31,12 +31,12 @@ export const Portfolio = () => {
 
    const cards = [
       {
-         title: "Job Booster",
-         description: "Job Booster is a personal project that optimize/create resumes with Artificial Intelligence to stand out for recruiters and employers, and replicates the Applicant Tracking System to show a similar score to pass these systems of automate screening.",
+         title: "Perfecto CV",
+         description: "Perfecto CV is a personal project that optimize/create resumes with Artificial Intelligence to stand out for recruiters and employers, and replicates the Applicant Tracking System to show a similar score to pass these systems of automate screening.",
          projectSteps: "Since I am the owner of this project, I developed everything from scratch.\n\nAs a Front-End developer, I used React JS and Tailwind to style the components. I used the basic and advanced hooks to create an interactive web application, from useState, useEffect, and also useContext to wrap all the code where authentication is needed to show the components.\n\nAs Back-End developer, I developed an Restful API in Python with FastApi, to develop and implement Artificial Intelligence services and manage the creation / advice of resumes. This API also helps to easily interact with the real-time database and enhance the permission of Free/Pro users.\n\nLately I migrated the project to Next.js 15, implementing the new routing and enhancing the SEO.",
          duration: "Feb 2025 - In course",
          role: "Full-Stack Developer",
-         source: "https://jobbooster.vercel.app/",
+         source: "https://perfectocv.com/",
          skills: ["React.JS", "Next.js", "Python", "FastApi", "Tailwind", "Cloud Firebase", "Artificial Intelligence", "OpenAI"],
          designPrototypes: [
          ],
