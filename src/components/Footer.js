@@ -10,7 +10,11 @@ export const Footer = () => {
           <Col md={8} className="text-center">
             <h2 className="footer-heading">Let's get in touch</h2>
             <hr className="footer-divider" /> {/* Divider */}
-            <p>Please feel free to send me an email. We can meet and have a coffee while talking about business!</p>
+            <p>I think is important to mention that I am currently located in Cancun, Mexico. But I'm up anytime for a call or videocall from anywhere in the world!
+              <br/>
+              So please feel free to send me a whatsapp or email. We can meet and have a coffee while talking about business
+
+            </p>
             <Button 
               variant="outline-light" 
               className="footer-email-btn" 
@@ -19,7 +23,7 @@ export const Footer = () => {
               fcatzin@hotmail.com
             </Button>
             <p className="mt-4 footer-credit">
-              Designed with Figma and developed with ReactJS by yours truly. © Felix Catzin 2024
+              Designed with Figma and developed with React.js by yours truly. © Felix Catzin 2025
             </p>
           </Col>
         </Row>

@@ -27,7 +27,7 @@ export const About = () => {
                      </p>*/}
                      <p className='h3 skillTitle text-center text-md-start'>
                         Hi there! Let me tell you many things about me :D...<br/><br/>
-                        I am an expert on creating and maintaining API Restful webservices and Microservices for almost 8 years!<br/><br/>My main stacks are Java with Spring Framework and Spring boot, and React JS as my fun toy to create Front-End apps.<br/><br/>
+                        I am an expert on creating and maintaining API Restful webservices and Microservices for almost 8 years!<br/><br/>My main stacks are Java with Spring Framework and Spring boot, and Node.js with React.js & Next.js as my funny toys to create Front-End apps.<br/><br/>
                         In addition to my extense back-end background, I also do Forex Trading in my free time, so yes, I am a nerd about economy stuffs, Cryptocurrencies and movies or memes about that, in fact, my analysis are good enough to make money for my saturday dinner.<br/><br/>
                         Besides hard work and boring stuffs, I want to share that I am a Lindy Hop dancer (Swing dance from the 20s ) and this is the thing that most inspires me in my life, because listening to jazz music, socialising and meeting new friends, those beautiful things, are a great part of my whole life.
                      </p>

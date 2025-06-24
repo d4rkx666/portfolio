@@ -45,11 +45,11 @@ export const Portfolio = () => {
       {
          title: "Welcome Travel Accommodation",
          description: "Welcome Travel Accommodation is a real state company which rentes rooms in sharing houses around Vancouver, BC.",
-         projectSteps: "I am currently designing and developing the website of the company.\n\nI am designing and developing the customer and admin panel, which are the most important goals for the company, so I can boost the internal management up to 80% of productivity.\n\nNow the current project fase is on development the functionality of the panels and designing the full database, but after finishing the main goal, I will improve the main page design.",
-         duration: "May 2024 - In Course",
-         role: "Web Master | Developer & Designer",
+         projectSteps: "I am currently designing and developing both web applications of the company.\n\nThe first app is an admin dashboard where the company can manage all their customer data including rents, bills, so on, which are the most important goals for the company, and my goal is to boost the internal management up to 90% of productivity. I delivered a beta version with mostly all the functionalities included, and some of them in test phase.\n\nIn the other hand, I have delivered the first production version of the public website where people can consult a list of available rooms and see the details of each rooms such as location, price, descriptions, so on.",
+         duration: "April 2024 - In Course",
+         role: "Full-Stack Developer",
          source: "https://welcometravelaccommodation.com/",
-         skills: ["PHP language", "MySQL Databases", "Javascript", "HTML5 and CSS5"],
+         skills: ["Node.js", "Next.js", "TypeScript", "HTML5 and CSS5", "Tailwind 4", "Firebase", "Cloudinary"],
          designPrototypes: [
          ],
          thumbnail: wta_thumbnail
