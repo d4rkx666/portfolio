@@ -16,7 +16,7 @@ export async function POST(req: Request) {
 
    try {
 
-      await firestoreService.setDocument("experiences", body.id, body);
+      await firestoreService.setDocument("experiences", body.id.toString(), body);
       return NextResponse.json({ success: true });
 
    } catch (error) {
