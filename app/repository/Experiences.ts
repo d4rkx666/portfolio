@@ -4,7 +4,7 @@ import { collection, getDocs } from 'firebase/firestore';
 import {db} from "@/core/dbconfig/connection"
 import { ExperienceItem } from '../types/Experience';
 
-export function experiences_repository() {
+export function ExperiencesRepository() {
   const [data, setData] = useState<ExperienceItem[]>([]);
   const [loading, setLoading] = useState(true);
 

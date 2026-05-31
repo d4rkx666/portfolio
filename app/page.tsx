@@ -1,6 +1,6 @@
 "use client";
 import { useMemo, useRef, useState } from 'react';
-import { portfolio_repository } from './repository/Portfolio';
+import { PortfolioRepository } from './repository/Portfolio';
 import Loader from '@/components/Loader';
 import { ProjectCard } from '@/components/index/ProjectCard';
 import ProjectModal from '@/components/index/ProjectModal';
@@ -10,7 +10,7 @@ export default function Home() {
 
   // States
   const [ecosystem, setEcosystem] = useState("java");
-  const {data:projects, loading: isLoadingProjects} = portfolio_repository();
+  const {data:projects, loading: isLoadingProjects} = PortfolioRepository();
   const projectsDivRef = useRef<HTMLDivElement | null>(null);
 
   // Project modal states
@@ -101,30 +101,30 @@ export default function Home() {
                 <span className="text-[#4C1D95]"> React JS</span>.
               </p>
               <p>{/* #db9e2b */}
-                It's a must to mention that I care deeply about the <span className="text-[#db9e2b]">User Experience</span> in both sides.
+                It&apos;s a must to mention that I care deeply about the <span className="text-[#db9e2b]">User Experience</span> in both sides.
               </p>
               
               {/* Docker Code snippet */}
               <div className="mt-6 bg-[#0A0A0F] border border-gray-800 p-4 font-mono text-xs relative group">
                 <div className="absolute top-0 right-0 w-20 h-px bg-gradient-to-l from-[#00FF88]/30 to-transparent" />
-                <div className="text-gray-500 mb-2">// docker-compose.yml</div>
+                <div className="text-gray-500 mb-2">&sol;&sol; docker-compose.yml</div>
                 <div className="space-y-1">
-                  <div><span className="text-[#00FF88]">version</span>: <span className="text-white">'3.8'</span></div>
+                  <div><span className="text-[#00FF88]">version</span>: <span className="text-white">&apos;3.8&apos;</span></div>
                   <div><span className="text-white">services</span>:</div>
                   <div className="ml-4">
                     <div><span className="text-[#4C1D95]">java-api</span>:</div>
                     <div className="ml-4">
                       <div><span className="text-gray-500">build</span>: <span className="text-white">./java/spring-boot</span></div>
-                      <div><span className="text-gray-500">ports</span>: <span className="text-white">- "8080:8080"</span></div>
+                      <div><span className="text-gray-500">ports</span>: <span className="text-white">- &quot;8080:8080&quot;</span></div>
                       <div><span className="text-gray-500">environment</span>:</div>
-                      <div className="ml-4 text-gray-400">- JVM_OPTS="-Xmx512m"</div>
+                      <div className="ml-4 text-gray-400">- JVM_OPTS=&quot;-Xmx512m&quot;</div>
                     </div>
                   </div>
                   <div className="ml-4">
                     <div><span className="text-[#4C1D95]">node-runtime</span>:</div>
                     <div className="ml-4">
                       <div><span className="text-gray-500">build</span>: <span className="text-white">./node/express</span></div>
-                      <div><span className="text-gray-500">ports</span>: <span className="text-white">- "3000:3000"</span></div>
+                      <div><span className="text-gray-500">ports</span>: <span className="text-white">- &quot;3000:3000&quot;</span></div>
                       <div><span className="text-gray-500">depends_on</span>:</div>
                       <div className="ml-4 text-gray-400">- java-api</div>
                     </div>

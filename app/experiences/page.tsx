@@ -1,14 +1,14 @@
 'use client';
 
 import { useState, useRef, useEffect, useMemo } from 'react';
-import { experiences_repository } from '../repository/Experiences';
+import { ExperiencesRepository } from '../repository/Experiences';
 import TimelineCard from '@/components/experiences/TimelineCard';
 import Loader from '@/components/Loader';
 
 export default function Experience() {
   
   // database
-  const {data:experiences, loading:loadingExperiences} = experiences_repository();
+  const {data:experiences, loading:loadingExperiences} = ExperiencesRepository();
 
   const [expandedIds, setExpandedIds] = useState<Set<number>>(
     new Set(experiences.filter(e => e.stackType === 'core' && e.type === "exp").map(e => e.id))

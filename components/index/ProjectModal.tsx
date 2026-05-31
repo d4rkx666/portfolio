@@ -40,7 +40,7 @@ export default function ProjectModal({ isOpen, onClose, project }: ProjectModalP
       {/* Modal */}
       <div className="fixed inset-0 z-50 flex items-center justify-center p-4 pointer-events-none">
         <div className="pointer-events-auto w-full max-w-3xl bg-[#111115] border border-gray-800 shadow-2xl animate-in zoom-in duration-300">
-          {/* Header with accent line */}
+          {/* Header */}
           <div className="relative">
             <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-[#00FF88] via-[#4C1D95] to-transparent" />
             <div className="flex justify-between items-start p-6 pb-0">
@@ -74,13 +74,13 @@ export default function ProjectModal({ isOpen, onClose, project }: ProjectModalP
               <span className="text-gray-600">]</span>
             </div>
 
-            {/* Description - splitted by jump lines */}
+            {/* Description */}
             {project.full_description.split("\n").map((text, k) => <p key={k} className="text-gray-300 text-sm leading-relaxed">{text}</p>)}
 
             {/* Technologies */}
             {project.technologies.length > 0 && (
               <div>
-                <div className="font-mono text-[10px] text-gray-500 mb-3 tracking-wider">// tech_stack</div>
+                <div className="font-mono text-[10px] text-gray-500 mb-3 tracking-wider">&sol;&sol; tech_stack</div>
                 <div className="flex flex-wrap gap-2">
                   {project.technologies.map((tech, i) => (
                     <span 
@@ -94,7 +94,7 @@ export default function ProjectModal({ isOpen, onClose, project }: ProjectModalP
               </div>
             )}
 
-            {/* URL if exists */}
+            {/* URL */}
             {project.url_project && (
               <div className="pt-2">
                 <a 
@@ -110,7 +110,7 @@ export default function ProjectModal({ isOpen, onClose, project }: ProjectModalP
             )}
           </div>
 
-          {/* Footer accent */}
+          {/* Footer */}
           <div className="p-4 border-t border-gray-800/50 flex justify-end">
             <button 
               onClick={onClose}
