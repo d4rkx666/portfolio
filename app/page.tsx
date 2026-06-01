@@ -107,7 +107,7 @@ export default function Home() {
               {/* Docker Code snippet */}
               <div className="mt-6 bg-[#0A0A0F] border border-gray-800 p-4 font-mono text-xs relative group">
                 <div className="absolute top-0 right-0 w-20 h-px bg-gradient-to-l from-[#00FF88]/30 to-transparent" />
-                <div className="text-gray-500 mb-2">&sol;&sol; docker-compose.yml</div>
+                <div className="text-gray-500 mb-2">&#47;&#47; docker-compose.yml</div>
                 <div className="space-y-1">
                   <div><span className="text-[#00FF88]">version</span>: <span className="text-white">&apos;3.8&apos;</span></div>
                   <div><span className="text-white">services</span>:</div>

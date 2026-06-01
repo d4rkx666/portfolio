@@ -170,7 +170,7 @@ export default function TimelineCard({
 
               {/* All tech tags when expanded */}
               <div className="mt-4 pt-3 border-t border-gray-800/50">
-                <div className="text-[10px] font-mono text-gray-500 mb-2 tracking-wider">&sol;&sol; tech_stack</div>
+                <div className="text-[10px] font-mono text-gray-500 mb-2 tracking-wider">&#47;&#47; tech_stack</div>
                 <div className="flex flex-wrap gap-1.5">
                   {experience.technologies.map((tech, i) => (
                     <span key={i} className="text-[10px] font-mono text-gray-400 px-2 py-0.5 border border-gray-800">

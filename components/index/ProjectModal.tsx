@@ -80,7 +80,7 @@ export default function ProjectModal({ isOpen, onClose, project }: ProjectModalP
             {/* Technologies */}
             {project.technologies.length > 0 && (
               <div>
-                <div className="font-mono text-[10px] text-gray-500 mb-3 tracking-wider">&sol;&sol; tech_stack</div>
+                <div className="font-mono text-[10px] text-gray-500 mb-3 tracking-wider">&#47;&#47; tech_stack</div>
                 <div className="flex flex-wrap gap-2">
                   {project.technologies.map((tech, i) => (
                     <span 
