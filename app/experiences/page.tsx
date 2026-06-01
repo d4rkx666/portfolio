@@ -4,6 +4,7 @@ import { useState, useRef, useEffect, useMemo } from 'react';
 import { ExperiencesRepository } from '../repository/Experiences';
 import TimelineCard from '@/components/experiences/TimelineCard';
 import Loader from '@/components/Loader';
+import { trackEvent } from '../utils/Analytics';
 
 export default function Experience() {
   
@@ -27,6 +28,7 @@ export default function Experience() {
       newExpanded.delete(id);
     } else {
       newExpanded.add(id);
+      trackEvent("Reading experience");
     }
     setExpandedIds(newExpanded);
   };

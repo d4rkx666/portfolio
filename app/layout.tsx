@@ -4,6 +4,7 @@ import "./globals.css";
 import { Header } from "../components/header/Header";
 import { Footer } from "@/components/Footer";
 import { menu_list } from "./routes";
+import AnalyticsProvider from "./analytics";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -47,7 +48,7 @@ export default function RootLayout({
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
     >
       <body className="min-h-full flex flex-col">
-        
+        <AnalyticsProvider/>
         <main className="relative min-h-screen bg-[#0A0A0F] text-gray-300 overflow-y-hidden">
           {/* Background */}
           <div className="absolute inset-0 bg-[linear-gradient(rgba(0,255,136,0.02)_1px,transparent_1px),linear-gradient(90deg,rgba(0,255,136,0.02)_1px,transparent_1px)] bg-size-[40px_40px] pointer-events-none" />

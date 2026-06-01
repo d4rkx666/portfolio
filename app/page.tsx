@@ -5,8 +5,12 @@ import Loader from '@/components/Loader';
 import { ProjectCard } from '@/components/index/ProjectCard';
 import ProjectModal from '@/components/index/ProjectModal';
 import { Project } from './types/Project';
+import { trackEvent } from './utils/Analytics';
+import { useRouter } from "next/navigation";
 
 export default function Home() {
+  //initialise router
+  const router = useRouter();
 
   // States
   const [ecosystem, setEcosystem] = useState("java");
@@ -30,6 +34,7 @@ export default function Home() {
   const openProject = (project:Project)=>{
     setSelectedProject(project);
     setIsProjectModalOpen(true);
+    trackEvent(`Project opened: ${project.company_name}`);
   }
 
   // Scroll to other divs
@@ -40,10 +45,16 @@ export default function Home() {
           behavior: "smooth",
           block: "start",
         });
+        trackEvent("View Projects button clic");
         break;
       default:
         break;
     }
+  }
+  
+  const goToContact = ()=>{
+    trackEvent("Contact button clic");
+    router.push("/contact")
   }
 
   if(isLoadingProjects){
@@ -72,8 +83,8 @@ export default function Home() {
           <button onClick={() => scrollTo("projects")} className="px-8 py-3 bg-[#00FF88]/10 border border-[#00FF88] text-[#00FF88] hover:bg-[#00FF88]/20 transition-all duration-300 tracking-wide text-sm">
             VIEW PROJECTS
           </button>
-          <button className="px-8 py-3 border border-gray-700 hover:border-[#00FF88]/50 hover:text-[#00FF88] transition-all duration-300 tracking-wide text-sm">
-            <a href={"/contact"}>CONTACT</a>
+          <button onClick={goToContact} className="px-8 py-3 border border-gray-700 hover:border-[#00FF88]/50 hover:text-[#00FF88] transition-all duration-300 tracking-wide text-sm">
+            CONTACT
           </button>
         </div>
       </section>

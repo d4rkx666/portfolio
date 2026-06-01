@@ -2,6 +2,7 @@
 'use client';
 
 import { useState } from 'react';
+import { trackEvent } from '../utils/Analytics';
 
 interface ContactProps {
   email: string;
@@ -15,8 +16,13 @@ export default function ContactPage({ email, linkedin, github }: ContactProps) {
   const handleCopyEmail = async () => {
     await navigator.clipboard.writeText(email);
     setCopied(true);
+    trackEvent("Email copied");
     setTimeout(() => setCopied(false), 2000);
   };
+
+  const trackingClick = (app:string) =>{
+    trackEvent(`Clicked ${app}`);
+  }
 
   return (
     <div className="space-y-8">
@@ -55,6 +61,7 @@ export default function ContactPage({ email, linkedin, github }: ContactProps) {
         {/* Alternative mailto link */}
         <a
           href={`mailto:${email}`}
+          onClick={() => trackingClick("outlook")}
           className="group relative bg-[#111115] border border-gray-800 hover:border-[#00FF88]/30 transition-all duration-300"
         >
           <div className="absolute inset-0 bg-gradient-to-r from-[#00FF88]/0 via-[#00FF88]/0 to-[#4C1D95]/0 group-hover:to-[#4C1D95]/5 transition-all duration-500" />
@@ -71,6 +78,7 @@ export default function ContactPage({ email, linkedin, github }: ContactProps) {
         {linkedin && (
           <a
             href={linkedin}
+            onClick={() => trackingClick("linkedin")}
             target="_blank"
             rel="noopener noreferrer"
             className="group relative bg-[#111115] border border-gray-800 hover:border-[#00FF88]/30 transition-all duration-300"
@@ -90,6 +98,7 @@ export default function ContactPage({ email, linkedin, github }: ContactProps) {
         {github && (
           <a
             href={github}
+            onClick={() => trackingClick("github")}
             target="_blank"
             rel="noopener noreferrer"
             className="group relative bg-[#111115] border border-gray-800 hover:border-[#00FF88]/30 transition-all duration-300"

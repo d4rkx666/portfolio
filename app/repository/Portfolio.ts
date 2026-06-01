@@ -1,7 +1,7 @@
 'use client';
 import { useEffect, useState } from 'react';
 import { collection, getDocs } from 'firebase/firestore';
-import {db} from "@/core/dbconfig/connection"
+import {db} from "@/core/firebase/config"
 import { Project } from '../types/Project';
 
 export function PortfolioRepository() {
