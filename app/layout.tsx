@@ -16,8 +16,24 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Full-stack Developer",
-  description: "fcatzin@hotmail.com",
+  title: "Felix Catzin | Full-Stack Developer",
+  description: "Full-Stack Developer specializing in Java - Spring, Node JS, and modern web technologies. Explore my projects and experience.",
+  openGraph: {
+    title: "Felix Catzin | Full-Stack Developer",
+    description:
+      "Full-Stack Developer specializing in Java - Spring, Node JS, and modern web technologies. Explore my projects and experience.",
+    url: "https://felixcatzin.com",
+    siteName: "Felix Portfolio",
+    type: "website",
+    images: [
+      {
+        url: "/logo.png",
+        width: 1200,
+        height: 630,
+        alt: "Felix Catzin Portfolio",
+      },
+    ],
+  },
 };
 
 export default function RootLayout({
